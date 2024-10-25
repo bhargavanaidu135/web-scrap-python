@@ -5,7 +5,7 @@ from selenium.webdriver.common.keys import Keys
 import time
 
 service = Service('C:\\Users\\PathTochromedriver.exe')
-
+# something added for demo
 def get_driver_args():
 
     chromeoptions = webdriver.ChromeOptions()
@@ -22,7 +22,7 @@ def get_driver_args():
 
 def main():
     driver = get_driver_args()
-  
+#something added  
     # entering username in the login field by using inspect keyId(NAME) and values(email)
     driver.find_element(By.NAME, "email").send_keys("<UserName>")
     time.sleep(2)
